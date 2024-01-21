@@ -1,5 +1,5 @@
 import { BsInstagram } from "react-icons/bs";
-import { FaFacebookF, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SocialMedia = () => (
@@ -10,8 +10,8 @@ const SocialMedia = () => (
       </Link>
     </div>
     <div>
-      <Link to={"https://www.facebook.com/profile.php?id=100021258036334"}>
-        <FaFacebookF />
+      <Link to={"https://github.com/rishishal"}>
+        <FaGithub />
       </Link>
     </div>
     <div>

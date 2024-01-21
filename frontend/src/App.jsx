@@ -1,4 +1,5 @@
 import "./App.scss";
+import { Routes, Route } from "react-router-dom";
 
 import {
   About,
@@ -8,6 +9,7 @@ import {
   HowBuild,
   Work,
 } from "./container/index";
+//import Details from "./container/details/Details";
 import { Navbar } from "./components";
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
       <Work />
       <Skills />
       <HowBuild />
+      {/* <Route path='/details' element={<Details />} /> */}
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import { images } from "../../constants";
 import "./Navbar.scss";
@@ -34,9 +35,9 @@ const Navbar = () => {
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                  <Link to={`#${item}`} onClick={() => setToggle(false)}>
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
